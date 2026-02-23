@@ -1,0 +1,40 @@
+{
+  "name": "agents-sdk-openai-websocket-fetch",
+  "version": "0.0.1",
+  "description": "Cloudflare Workers port of ai-sdk-openai-websocket-fetch — drop-in fetch replacement that routes OpenAI Responses API streaming requests through a persistent WebSocket connection.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "ai-sdk",
+    "openai",
+    "websocket",
+    "streaming",
+    "fetch",
+    "cloudflare-workers"
+  ],
+  "author": "Sunil Pai",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/threepointone/agents-sdk-openai-websocket-fetch"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4",
+    "typescript": "^5"
+  }
+}
