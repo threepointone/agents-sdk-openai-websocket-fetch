@@ -1,5 +1,8 @@
 # agents-sdk-openai-websocket-fetch
 
+<img width="1212" height="804" alt="image" src="https://github.com/user-attachments/assets/241efdaf-d420-4c8b-acf8-6307144e3f80" />
+
+
 Drop-in `fetch` replacement that routes OpenAI Responses API streaming requests through a persistent WebSocket connection — **ported for Cloudflare Workers**.
 
 This is a Cloudflare Workers–native port of [`ai-sdk-openai-websocket-fetch`](https://github.com/vercel-labs/ai-sdk-openai-websocket/tree/main/packages/ai-sdk-openai-websocket-fetch) by [Vercel Labs](https://github.com/vercel-labs). Instead of the Node.js `ws` package, it uses the Workers runtime's built-in WebSocket support via `fetch` with the `Upgrade: websocket` header.
